@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Сухопарова](https://up.htmlacademy.ru/adaptive/7/user/35902).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Белов] (https://htmlacademy.ru/adaptive/7/user/96038).
 
 ---
 
