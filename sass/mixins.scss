@@ -10,3 +10,11 @@
   width: $width;
   height: $height;
 }
+
+@mixin font-setup($l, $u1, $u2) {
+  font-family: 'OpenSans';
+  src:
+    local($l),
+    url($u1) format('woff'),
+    url($u2) format('woff2');
+}
