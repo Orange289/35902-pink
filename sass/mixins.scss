@@ -18,3 +18,7 @@
     url($u1) format('woff'),
     url($u2) format('woff2');
 }
+
+@mixin font-name {
+  font-family: 'OpenSans', 'Arial', sans-serif;
+}

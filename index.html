@@ -9,34 +9,34 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="page-header page-header--menu-open">
-          <div class="container">
-            <div class="page-header__title page-header__title--menu-open">
+          <div class="page-header__title page-header__title--menu-open">
+            <div class="container">
               <div class="page-header__logo">
-                <img src="http://placehold.it/75x22" alt="PINK" width="75" height="22">
+                <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
               </div>
-              <button class="page-header__btn-close" type="button" name="button"></button>
-            </div>
-            <nav class="main-nav main-nav--nojs">
-              <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-                <li class="main-nav__item"><a>Фотографии</a></li>
-                <li class="main-nav__item"><a>Конкурс</a></li>
-                <li class="main-nav__item"><a>Html Academy</a></li>
-              </ul>
-            </nav>
+            <input class="page-header__btn page-header__btn--close" type="image" name="button" src="img/icon-menu-cross.svg">
           </div>
+          </div>
+          <nav class="main-nav main-nav--nojs">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+              <li class="main-nav__item"><a href="#">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#">Конкурс</a></li>
+              <li class="main-nav__item"><a href="#">Html Academy</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="page-header page-header--menu-close">
-          <div class="container">
-            <div class="page-header__title page-header__title--menu-close">
+          <div class="page-header__title page-header__title--menu-close">
+            <div class="container">
               <div class="page-header__logo">
-                <img src="http://placehold.it/75x22" alt="PINK" width="75" height="22">
+                <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
               </div>
-              <button class="page-header__btn-open" type="button" name="button"></button>
+              <input class="page-header__btn page-header__btn--open" type="image" name="button" src="img/icon-menu-burger.svg">
             </div>
-            <div class="page-header__img">
-              <img src="http://placehold.it/320x314" alt="IPhone - PINK" width="320" height="314">
-            </div>
+          </div>
+          <div class="page-header__img">
+            <img src="img/iphone-hand-mobile@1x.png" alt="IPhone - PINK" width="257" height="285">
           </div>
         </div>
       </header>
@@ -55,37 +55,34 @@
           </div>
         </section>
         <section class="advantages">
-          <div class="container">
-            <header class="advantages__header">
-              <p class="advantages__title">
-                Устали от серости мегаполиса?
-              </p>
-              <p class="advantages__title">
-                Нам есть, что вам предложить!
-              </p>
-            </header>
-            <div class="advantages__list">
-              <div class="advantages__item advantages__item--mood">
+          <header class="advantages__header">
+            <p class="advantages__title">
+              Устали от серости мегаполиса?
+            </p>
+            <p class="advantages__title">
+              Нам есть, что вам предложить!
+            </p>
+          </header>
+          <div class="advantages__list">
+            <div class="container">
+              <div class="advantages__item">
                 <b>Поднимает настроение</b>
                 <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </div>
-              <div class="advantages__item advantages__item--world">
+              <div class="advantages__item">
                 <b>Меняет мир вокруг</b>
                 <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </div>
-              <div class="advantages__item advantages__item--friends">
+              <div class="advantages__item">
                 <b>Заводит новых друзей</b>
                 <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
               </div>
+              <img src="img/iphone-screen-mobile@1x.png" alt="Application on IPhone" width="157" height="320">
             </div>
-            <img src="http://placehold.it/157x320" alt="Application on IPhone" width="157" height="320">
           </div>
         </section>
         <section class="reviews">
           <div class="container slider">
-            <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-1" checked>
-            <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-2">
-            <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-3">
             <blockquote class="reviews__item reviews__item--first slider__item">
               <cite class="reviews__author">Николай Петров</cite>
               <p>
@@ -112,13 +109,13 @@
               <label class="slider__toggle" for="reviews-input-2">2</label>
               <label class="slider__toggle" for="reviews-input-3">3</label>
             </div>
+            <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-1" checked>
+            <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-2">
+            <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-3">
           </div>
         </section>
         <section class="prices">
           <div class="slider">
-            <input class="input__slider-input" type="radio" name="prices" id="prices-input-1">
-            <input class="input__slider-input" type="radio" name="prices" id="prices-input-2" checked>
-            <input class="input__slider-input" type="radio" name="prices" id="prices-input-3">
             <div class="prices__item prices__item--first slider__item">
               <div class="container">
                 <header class="prices__title">
@@ -190,6 +187,9 @@
               <label class="slider__toggle" for="prices-input-2">2</label>
               <label class="slider__toggle" for="prices-input-3">3</label>
             </div>
+            <input class="input__slider-input" type="radio" name="prices" id="prices-input-1">
+            <input class="input__slider-input" type="radio" name="prices" id="prices-input-2" checked>
+            <input class="input__slider-input" type="radio" name="prices" id="prices-input-3">
           </div>
         </section>
       </main>
