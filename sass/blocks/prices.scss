@@ -3,6 +3,9 @@
   background-color: #f2f2f2;
   padding-top: 90px;
   @include clearfix;
+  &__item:nth-child(n+2) {
+    display: none;
+  }
   &__title {
     background-color: #283645;
     color: #ffffff;
@@ -43,5 +46,3 @@
     border-right: 2px solid #e5e5e5;
     }
   }
-
-}
