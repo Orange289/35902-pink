@@ -1,0 +1,47 @@
+.prices {
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  padding-top: 90px;
+  @include clearfix;
+  &__title {
+    background-color: #283645;
+    color: #ffffff;
+    // background-image: url('img/bg-hit.svg');
+  }
+  &__hit {
+    background-image: url('../img/bg-hit.svg');
+    float: left;
+    span {
+      @include font-name;
+      font-size: 14px;
+      line-height: 30px;
+      position: absolute;
+      transform:  translate(10px, 10px) rotate(-45deg);
+    }
+  }
+  &__name {
+    @include font-name;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+  }
+  &__amount {
+    @include font-name;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  &__content {
+    background-color: #ffffff;
+    text-align: left;
+  }
+  &__option {
+    border-bottom: 2px solid #e5e5e5;
+  }
+  &__border {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    }
+  }
+
+}
