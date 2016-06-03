@@ -1,13 +1,8 @@
 .downloading {
   background-color: #1d2631;
   &__btn {
-    @include font-name;
-    font-size: 18px;
     line-height: 18px;
-    font-weight: 600;
-    color: #ffffff;
     display: block;
-    text-align: center;
     border: 2px solid #ffffff;
     background-color: transparent;
     border-radius: 20px;
@@ -17,7 +12,6 @@
     text-align: center;
   }
   p {
-    @include font-name;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
