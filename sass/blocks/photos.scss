@@ -1,0 +1,63 @@
+.photos {
+  &__title {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__item--panorama {
+    position: relative;
+  }
+  &__img {
+    @include size(280px, 180px);
+  }
+  &__panorama {
+    @include size(320px, 137px);
+  }
+  &__panorama-title {
+    @include font-param(12px, 24px, 600, #ffffff);
+    text-transform: uppercase;
+    background-color: #d22856;
+    position: absolute;
+    top: 0;
+    left: 160px;
+    padding: 5px 20px;
+  }
+  &__description {
+    background-color: #f2f2f2;
+    margin-top: -10px;
+    padding-left: 18px;
+    padding-right: 23px;
+  }
+  &_description-content{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  &__author {
+    padding-top: 13px;
+    margin-bottom: -5px;
+    color: #283645;
+  }
+  &__who {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  &__when {
+    @include font-param(12px, 24px, 300);
+    text-transform: uppercase;
+  }
+  &__likes {
+    @include font-param(12px, 24px, 400, #d22856);
+    text-transform: uppercase;
+    display: block;
+    padding-left: 32px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+}

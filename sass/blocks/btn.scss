@@ -1,7 +1,5 @@
 .btn {
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
+  @include font-white-bold;
   text-align: center;
   border: none;
   outline: none;

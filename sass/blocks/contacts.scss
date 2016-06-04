@@ -1,15 +1,13 @@
 .contacts {
   &__label {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
+    @include font-4(30px);
     color: #d22856;
     display: block;
+    text-transform: uppercase;
+    padding-left: 23px;
   }
   &__input {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
+    @include font-name;
+    @include font-form;
   }
 }

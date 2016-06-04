@@ -10,28 +10,24 @@
   }
   &__title {
     background-color: #283645;
-    color: #ffffff;
     // background-image: url('img/bg-hit.svg');
   }
   &__hit {
     background-image: url('../img/bg-hit.svg');
     float: left;
-    span {
-      font-size: 14px;
-      line-height: 30px;
-      position: absolute;
-      transform:  translate(10px, 10px) rotate(-45deg);
-    }
+  }
+  &__hit-span {
+    @include font-1(30px);
+    position: absolute;
+    transform:  translate(10px, 10px) rotate(-45deg);
   }
   &__name {
-    font-size: 18px;
-    font-weight: 600;
+    @include font-white-bold(30px);
     display: block;
   }
   &__amount {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 300;
+    @include font-2(30px);
+    color: #ffffff;
   }
   &__content {
     background-color: #ffffff;

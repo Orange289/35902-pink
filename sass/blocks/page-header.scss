@@ -1,7 +1,6 @@
 .page-header {
   background-color: #283645;
   text-align: center;
-  color: #ffffff;
   &__title {
     @include clearfix;
   }
@@ -28,8 +27,7 @@
     @include size(257px, 285px);
   }
   h1 {
-    font-size: 24px;
-    line-height: auto;
-    font-weight: 300;
+    @include font-2;
+    color: #ffffff;
   }
 }

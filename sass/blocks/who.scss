@@ -1,22 +1,15 @@
 .who {
   &__title {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
     text-align: center;
   }
   &__label {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
     color: #d22856;
     display: block;
+    text-transform: uppercase;
   }
   &__input {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
+    @include font-name;
     color: #283645;
-  }  
+    @include font-form;
+  }
 }

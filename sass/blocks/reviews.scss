@@ -8,16 +8,10 @@
     display: none;
   }
   &__author {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 600;
+    @include font-3(30px);
     font-style: normal;
-    color: #000000;
   }
   p {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
+    @include font-4(30px);
   }
 }

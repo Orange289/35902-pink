@@ -9,9 +9,7 @@
     margin-top: 40px;
   }
   &__copyright {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
+    @include font-4(18px);
     color: #283645;
   }
 }

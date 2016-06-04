@@ -1,8 +1,5 @@
 .main-nav {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 600;
-  color: #ffffff;
+  @include font-white-bold(32px);
   text-transform: uppercase;
   margin-top: -18px;
   margin-bottom: -15px;
@@ -15,7 +12,7 @@
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
   }
-  &__item a {
+  a {
     color: #ffffff;
   }
 }
