@@ -6,6 +6,7 @@
   }
   &__logo {
     @include size(75px, 22px);
+    background-image: url('../img/logo-pink-white-mobile.svg');
     float: left;
   }
   &__btn {
@@ -19,15 +20,41 @@
   &--menu-close {
     background: #283645 url('../img/bg-back-mobile@1x.jpg') no-repeat;
     background-position: center;
+    // padding-bottom: 390px;
   }
   &__title--menu-close {
     background-color: rgba(0, 0, 0, 0.3);
   }
   &__img {
     @include size(257px, 285px);
+    background: url('../img/iphone-hand-mobile@1x.png') 50% 50%;
   }
   h1 {
     @include font-2;
     color: #ffffff;
+  }
+}
+
+@media ($tablet-widths) {
+  .page-header {
+    position: relative;
+    &__logo {
+      @include size(147px, 40px);
+      background: url('../img/logo-pink-white-tablet.svg') no-repeat;
+    }
+    &__img {
+      @include size(700px, 545px);
+      background-image: url('../img/iphone-hand-desktop@1x.png');
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .page-header {
+    position: relative;
+    &__logo {
+      @include size(147px, 40px);
+      background-image: url('../img/logo-pink-white-desktop.svg');
+    }
   }
 }
