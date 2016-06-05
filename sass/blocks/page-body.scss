@@ -1,0 +1,24 @@
+@font-face {
+  @include font-setup($font-1-local, $font-1-url1, $font-1-url2);
+}
+@font-face {
+  @include font-setup($font-2-local, $font-2-url1, $font-2-url2);
+}
+@font-face {
+  @include font-setup($font-3-local, $font-3-url1, $font-3-url2);
+}
+
+.page-body {
+  @include font-name;
+  @include font-4(30px);
+  background-color: #939393;
+  a {
+    text-decoration: none;
+  }
+  .btn {
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

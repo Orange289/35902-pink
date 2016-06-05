@@ -1,0 +1,15 @@
+.inner-footer {
+  text-align: center;
+  margin-top: 60px;
+  &__logo {
+    @include size(147px, 40px);
+    line-height: 0;
+  }
+  &__social {
+    margin-top: 40px;
+  }
+  &__copyright {
+    @include font-4(18px);
+    color: #283645;
+  }
+}

@@ -1,0 +1,43 @@
+.prices {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  padding-top: 90px;
+  @include clearfix;
+  &__item:nth-child(n+2) {
+    display: none;
+  }
+  &__title {
+    background-color: #283645;
+    // background-image: url('img/bg-hit.svg');
+  }
+  &__hit {
+    background-image: url('../img/bg-hit.svg');
+    float: left;
+  }
+  &__hit-span {
+    @include font-1(30px);
+    position: absolute;
+    transform:  translate(10px, 10px) rotate(-45deg);
+  }
+  &__name {
+    @include font-white-bold(30px);
+    display: block;
+  }
+  &__amount {
+    @include font-2(30px);
+    color: #ffffff;
+  }
+  &__content {
+    background-color: #ffffff;
+    text-align: left;
+  }
+  &__option {
+    border-bottom: 2px solid #e5e5e5;
+  }
+  &__border {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    }
+  }

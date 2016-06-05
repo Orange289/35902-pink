@@ -1,0 +1,17 @@
+.reviews {
+  background-color: #ffffff;
+  &__item {
+    text-align: center;
+    margin: 0;
+  }
+  &__item:nth-child(n+2){
+    display: none;
+  }
+  &__author {
+    @include font-3(30px);
+    font-style: normal;
+  }
+  p {
+    @include font-4(30px);
+  }
+}

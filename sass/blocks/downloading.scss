@@ -1,0 +1,19 @@
+.downloading {
+  background-color: #1d2631;
+  &__btn {
+    display: block;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    border-radius: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  &__social {
+    margin-top: 32px;
+    text-align: center;
+  }
+  p {
+    @include font-1;
+    text-align: center;
+  }
+}

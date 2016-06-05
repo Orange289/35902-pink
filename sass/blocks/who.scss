@@ -1,0 +1,15 @@
+.who {
+  &__title {
+    text-align: center;
+  }
+  &__label {
+    color: #d22856;
+    display: block;
+    text-transform: uppercase;
+  }
+  &__input {
+    @include font-name;
+    color: #283645;
+    @include font-form;
+  }
+}

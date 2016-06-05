@@ -2,58 +2,59 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="wrapper">
-    <header class="page-header">
-      <div class="page-header page-header--menu-open">
-        <div class="container">
+  <body class="page-body">
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header page-header--menu-open">
           <div class="page-header__title page-header__title--menu-open">
-            <div class="page-header__logo">
-              <img src="http://placehold.it/75x22" alt="PINK" width="75" height="22">
-            </div>
-            <button class="page-header__btn-close" type="button" name="button"></button>
+            <div class="container">
+              <div class="page-header__logo">
+                <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
+              </div>
+            <input class="page-header__btn page-header__btn--close" type="image" name="button" src="img/icon-menu-cross.svg">
+          </div>
           </div>
           <nav class="main-nav main-nav--nojs">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-              <li class="main-nav__item"><a>Фотографии</a></li>
-              <li class="main-nav__item"><a>Конкурс</a></li>
-              <li class="main-nav__item"><a>Html Academy</a></li>
+              <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
             </ul>
           </nav>
         </div>
-      </div>
-      <div class="page-header page-header--menu-close">
-        <div class="container">
+        <div class="page-header page-header--menu-close">
           <div class="page-header__title page-header__title--menu-close">
-            <div class="page-header__logo">
-              <img src="http://placehold.it/75x22" alt="PINK" width="75" height="22">
+            <div class="container">
+              <div class="page-header__logo">
+                <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
+              </div>
+              <input class="page-header__btn page-header__btn--open" type="image" name="button" src="img/icon-menu-burger.svg">
             </div>
-            <button class="page-header__btn-open" type="button" name="button"></button>
           </div>
           <div class="page-header__img">
-            <img src="http://placehold.it/320x314" alt="IPhone - PINK" width="320" height="314">
+            <img src="img/iphone-hand-mobile@1x.png" alt="IPhone - PINK" width="257" height="285">
           </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="downloading">
-        <div class="container">
-          <a class="downloading__btn btn" href="#">Скачать приложение</a>
-          <div class="downloading__social">
-            <a class="social-link social-link--itunes" href="#">itunes</a>
-            <a class="social-link social-link--gmarket" href="#">gmarket</a>
-            <a class="social-link social-link--mstore" href="#">mstore</a>
+      </header>
+      <main>
+        <section class="downloading">
+          <div class="container">
+            <a class="downloading__btn btn" href="#">Скачать приложение</a>
+            <div class="downloading__social">
+              <a class="social-link social-link--itunes" href="#">itunes</a>
+              <a class="social-link social-link--gmarket" href="#">gmarket</a>
+              <a class="social-link social-link--mstore" href="#">mstore</a>
+            </div>
+            <p>
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
           </div>
-          <p>
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="container">
+        </section>
+        <section class="advantages">
           <header class="advantages__header">
             <p class="advantages__title">
               Устали от серости мегаполиса?
@@ -63,153 +64,175 @@
             </p>
           </header>
           <div class="advantages__list">
-            <div class="advantages__item advantages__item--mood">
-              <b>Поднимает настроение</b>
-              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </div>
-            <div class="advantages__item advantages__item--world">
-              <b>Меняет мир вокруг</b>
-              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </div>
-            <div class="advantages__item advantages__item--friends">
-              <b>Заводит новых друзей</b>
-              <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-            </div>
-          </div>
-          <img src="http://placehold.it/157x320" alt="Application on IPhone" width="157" height="320">
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="container slider">
-          <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-1" checked>
-          <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-2">
-          <input class="input__slider-input" type="radio" name="reviews" id="reviews-input-3">
-          <blockquote class="reviews__item reviews__item--first slider__item">
-            <cite class="reviews__author">Николай Петров</cite>
-            <p>
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item reviews__item--second slider__item">
-            <cite class="reviews__author">Николай Петров</cite>
-            <p>
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item reviews__item--third slider__item">
-            <cite class="reviews__author">Николай Петров</cite>
-            <p>
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-          <div class="reviews__toggles slider__toggles">
-            <label class="slider__toggle" for="reviews-input-1">1</label>
-            <label class="slider__toggle" for="reviews-input-2">2</label>
-            <label class="slider__toggle" for="reviews-input-3">3</label>
-          </div>
-        </div>
-      </section>
-      <section class="prices">
-        <div class="slider">
-          <input class="input__slider-input" type="radio" name="prices" id="prices-input-1">
-          <input class="input__slider-input" type="radio" name="prices" id="prices-input-2" checked>
-          <input class="input__slider-input" type="radio" name="prices" id="prices-input-3">
-          <div class="prices__item prices__item--first slider__item">
             <div class="container">
+              <div class="advantages__item">
+                <b>Поднимает настроение</b>
+                <p class="advantages__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+              <div class="advantages__item">
+                <b>Меняет мир вокруг</b>
+                <p class="advantages__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </div>
+              <div class="advantages__item">
+                <b>Заводит новых друзей</b>
+                <p class="advantages__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+              </div>
+              <img src="img/iphone-screen-mobile@1x.png" alt="Application on IPhone" width="157" height="320">
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container slider">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author">Николай Петров</cite>
+              <p>
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author">Николай Петров</cite>
+              <p>
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author">Николай Петров</cite>
+              <p>
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <div class="reviews__toggles slider__toggles">
+              <label class="slider__toggle" for="reviews-input-1">1</label>
+              <label class="slider__toggle" for="reviews-input-2">2</label>
+              <label class="slider__toggle" for="reviews-input-3">3</label>
+            </div>
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+          </div>
+        </section>
+        <section class="prices">
+          <div class="slider">
+            <div class="prices__item slider__item">
               <header class="prices__title">
-                <div class="hit">
-                  <span>ХИТ</span>
+                <div class="container prices__border">
+                  <div class="prices__hit">
+                    <span class="prices__hit-span">ХИТ</span>
+                  </div>
+                  <b class="prices__name">Стандарт</b>
+                  <span class="prices__amount">3,99 USD</span>
                 </div>
-                <b class="prices__name">Стандарт</b>
-                <span class="prices__amount">3,99 USD</span>
               </header>
               <div class="prices__content">
-                <div class="prices__item prices__item-filter">
-                  <span>Розовый фильтр</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Розовый фильтр</span>
+                  </div>
                 </div>
-                <div class="prices__item prices__item-smiles">
-                  <span>Смайлики</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Смайлики</span>
+                  </div>
                 </div>
-                <div class="prices__item prices__item-comments">
-                  <span>Комментарии</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Комментарии</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="prices__item prices__item--second slider__item">
-            <div class="container">
+            <div class="prices__item slider__item">
               <header class="prices__title">
-                <div class="hit">
-                  <span>ХИТ</span>
+                <div class="container prices__border">
+                  <div class="prices__hit">
+                    <span>ХИТ</span>
+                  </div>
+                  <b class="prices__name">Стандарт</b>
+                  <span class="prices__amount">3,99 USD</span>
                 </div>
-                <b class="prices__name">Стандарт</b>
-                <span class="prices__amount">3,99 USD</span>
               </header>
               <div class="prices__content">
-                <div class="prices__item prices__item-filter">
-                  <span>Розовый фильтр</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Розовый фильтр</span>
+                  </div>
                 </div>
-                <div class="prices__item prices__item-smiles">
-                  <span>Смайлики</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Смайлики</span>
+                  </div>
                 </div>
-                <div class="prices__item prices__item-comments">
-                  <span>Комментарии</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Комментарии</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="prices__item prices__item--third slider__item">
-            <div class="container">
+            <div class="prices__item slider__item">
               <header class="prices__title">
-                <div class="hit">
-                  <span>ХИТ</span>
+                <div class="container prices__border">
+                  <div class="prices__hit">
+                    <span>ХИТ</span>
+                  </div>
+                  <b class="prices__name">Стандарт</b>
+                  <span class="prices__amount">3,99 USD</span>
                 </div>
-                <b class="prices__name">Стандарт</b>
-                <span class="prices__amount">3,99 USD</span>
               </header>
               <div class="prices__content">
-                <div class="prices__item prices__item-filter">
-                  <span>Розовый фильтр</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Розовый фильтр</span>
+                  </div>
                 </div>
-                <div class="prices__item prices__item-smiles">
-                  <span>Смайлики</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Смайлики</span>
+                  </div>
                 </div>
-                <div class="prices__item prices__item-comments">
-                  <span>Комментарии</span>
+                <div class="prices__option">
+                  <div class="container prices__border">
+                    <span>Комментарии</span>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="prices__toggles slider__toggles">
+              <label class="slider__toggle" for="prices-input-1">1</label>
+              <label class="slider__toggle" for="prices-input-2">2</label>
+              <label class="slider__toggle" for="prices-input-3">3</label>
+            </div>
+            <input class="slider__input" type="radio" name="prices" id="prices-input-1">
+            <input class="slider__input" type="radio" name="prices" id="prices-input-2" checked>
+            <input class="slider__input" type="radio" name="prices" id="prices-input-3">
           </div>
-          <div class="prices__toggles slider__toggles">
-            <label class="slider__toggle" for="prices-input-1">1</label>
-            <label class="slider__toggle" for="prices-input-2">2</label>
-            <label class="slider__toggle" for="prices-input-3">3</label>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <section class="page-footer__map">
+          <img src="img/bg-map-mobile.png" alt="map" width="320" height="645">
+        </section>
+        <section class="page-footer__contacts">
+          <div class="container">
+            <p class="page-footer__title">Остались вопросы? Свяжитесь с нами!</p>
+            <div class="page-footer__item">
+              <b>Звоните:</b>
+              <span class="page-footer__content">+7 (812) 555-66-66</span>
+            </div>
+            <div class="page-footer__item">
+              <b>Пишите:</b>
+              <span class="page-footer__content">mail@htmlacademy.ru</span>
+            </div>
+            <div class="page-footer__item">
+              <b>Приезжайте в гости:</b>
+              <span class="page-footer__content">ул. Большая Конюшенная, 19/8</span>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <section class="page-footer__map">
-        <img src="http://placehold.it/320x645" alt="map">
-      </section>
-      <section class="page-footer__contacts container">
-        <p class="page-footer__title">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="page-footer__item page-footer__item--call">
-          <b>Звоните:</b>
-          <span class="page-footer__content page-footer__content--phone">+7 (812) 555-66-66</span>
-        </div>
-        <div class="page-footer__item page-footer__item--write">
-          <b>Пишите:</b>
-          <span class="page-footer__content page-footer__content--email">mail@htmlacademy.ru</span>
-        </div>
-        <div class="page-footer__item page-footer__item--visit">
-          <b>Приезжайте в гости:</b>
-          <span class="page-footer__content page-footer__content--address">ул. Большая Конюшенная, 19/8</span>
-        </div>
-      </section>
-    </footer>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>

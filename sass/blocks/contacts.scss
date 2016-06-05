@@ -1,0 +1,13 @@
+.contacts {
+  &__label {
+    @include font-4(30px);
+    color: #d22856;
+    display: block;
+    text-transform: uppercase;
+    padding-left: 23px;
+  }
+  &__input {
+    @include font-name;
+    @include font-form;
+  }
+}

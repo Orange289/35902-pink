@@ -1,0 +1,37 @@
+.page-footer {
+  position: relative;
+  text-align: center;
+  &__map {
+    position: relative;
+    line-height: 0;
+    @include size(320px, 645px);
+    margin-top: -31px;
+    z-index: 1;
+  }
+  &__contacts {
+    position: absolute;
+    z-index: 3;
+    top: 31px;
+    width: 100%;
+    margin-bottom: 300px;
+    background-color: #ffffff;
+    // background: url('../img/bg-triangle-white-footer.svg') 0 110% no-repeat, #ffffff;
+  }
+  &__title {
+    @include font-2;
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  b {
+    @include font-param(18px, auto, 600);
+    display: block;
+  }
+  &__item:last-of-type {
+    margin-bottom: 40px;
+  }
+  &__content {
+    @include font-2;
+    color: #d22856;
+  }
+}

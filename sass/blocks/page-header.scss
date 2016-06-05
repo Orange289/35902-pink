@@ -1,0 +1,33 @@
+.page-header {
+  background-color: #283645;
+  text-align: center;
+  &__title {
+    @include clearfix;
+  }
+  &__logo {
+    @include size(75px, 22px);
+    float: left;
+  }
+  &__btn {
+    @include size(24px, 23px);
+    float: right;
+    cursor: pointer;
+  }
+  &__title--menu-open {
+    border-bottom: 1px solid #000000;
+  }
+  &--menu-close {
+    background: #283645 url('../img/bg-back-mobile@1x.jpg') no-repeat;
+    background-position: center;
+  }
+  &__title--menu-close {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  &__img {
+    @include size(257px, 285px);
+  }
+  h1 {
+    @include font-2;
+    color: #ffffff;
+  }
+}

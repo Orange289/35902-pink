@@ -1,0 +1,18 @@
+.main-nav {
+  @include font-white-bold(32px);
+  text-transform: uppercase;
+  margin-top: -18px;
+  margin-bottom: -15px;
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+  &__item {
+    text-align: center;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
+  }
+  a {
+    color: #ffffff;
+  }
+}
