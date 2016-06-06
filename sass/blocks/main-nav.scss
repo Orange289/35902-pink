@@ -3,16 +3,29 @@
   text-transform: uppercase;
   margin-top: -18px;
   margin-bottom: -15px;
-  &__list {
+  .container {
+    width: auto;
+  }
+  .main-nav__list {
     list-style: none;
     padding: 0;
   }
-  &__item {
+  .main-nav__item {
     text-align: center;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
   }
   a {
+    display: inline-block;
     color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+
+@media ($desktop-widths) {
+  .main-nav {
+
   }
 }

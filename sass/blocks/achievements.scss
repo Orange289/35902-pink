@@ -1,6 +1,6 @@
 .achievements {
   background-color: #f2f2f2;
-  &__title {
+  .achievements__title {
     @include font-4(30px);
     color: #d22856;
     text-align: center;
@@ -8,7 +8,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  &__label {
+  .achievements__label {
     display: block;
     @include font-form;
   }

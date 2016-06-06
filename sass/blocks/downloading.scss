@@ -1,6 +1,6 @@
 .downloading {
   background-color: #1d2631;
-  &__btn {
+  .downloading__btn {
     display: block;
     border: 3px solid #ffffff;
     background-color: transparent;
@@ -8,7 +8,7 @@
     padding-top: 13px;
     padding-bottom: 13px;
   }
-  &__social {
+  .downloading__social {
     margin-top: 32px;
     text-align: center;
   }

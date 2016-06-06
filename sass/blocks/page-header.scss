@@ -1,20 +1,20 @@
 .page-header {
   background-color: #283645;
   text-align: center;
-  &__title {
+  .page-header__title {
     @include clearfix;
   }
-  &__logo {
+  .page-header__logo {
     @include size(75px, 22px);
     background-image: url('../img/logo-pink-white-mobile.svg');
     float: left;
   }
-  &__btn {
+  .page-header__btn {
     @include size(24px, 23px);
     float: right;
     cursor: pointer;
   }
-  &__title--menu-open {
+  .page-header__title--menu-open {
     border-bottom: 1px solid #000000;
   }
   &--menu-close {
@@ -22,10 +22,10 @@
     background-position: center;
     // padding-bottom: 390px;
   }
-  &__title--menu-close {
+  .page-header__title--menu-close {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  &__img {
+  .page-header__img {
     @include size(257px, 285px);
     background: url('../img/iphone-hand-mobile@1x.png') 50% 50%;
   }
@@ -38,11 +38,11 @@
 @media ($tablet-widths) {
   .page-header {
     position: relative;
-    &__logo {
+    .page-header__logo {
       @include size(147px, 40px);
       background: url('../img/logo-pink-white-tablet.svg') no-repeat;
     }
-    &__img {
+    .page-header__img {
       @include size(700px, 545px);
       background-image: url('../img/iphone-hand-desktop@1x.png');
     }
@@ -52,7 +52,7 @@
 @media ($desktop-widths) {
   .page-header {
     position: relative;
-    &__logo {
+    .page-header__logo {
       @include size(147px, 40px);
       background-image: url('../img/logo-pink-white-desktop.svg');
     }
