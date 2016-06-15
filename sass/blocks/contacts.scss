@@ -1,13 +1,17 @@
 .contacts {
-  .contacts__label {
-    @include font-4(30px);
-    color: #d22856;
-    display: block;
-    text-transform: uppercase;
-    padding-left: 23px;
-  }
-  .contacts__input {
-    @include font-name;
-    @include font-5;
-  }
+  display: flex;
+
+}
+
+.contacts__label {
+  @include font-4(30px);
+  color: #d22856;
+  display: block;
+  text-transform: uppercase;
+  padding-left: 23px;
+}
+
+.contacts__input {
+  @include font-name;
+  @include font-5;
 }

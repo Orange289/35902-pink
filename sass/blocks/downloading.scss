@@ -1,7 +1,5 @@
 .downloading {
   background-color: #1d2631;
-  width: 320px;
-  margin: 0 auto;
   padding-top: 29px;
 
   p {
@@ -63,7 +61,6 @@
     @include font-3(18px);
     color: #ffffff;
     margin-top: 30px;
-    width: 290px;
     margin-left: 5px;
   }
 

@@ -3,41 +3,116 @@
   z-index: 2;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  padding-top: 90px;
+  padding-top: 65px;
   @include clearfix;
-  .prices__item:nth-child(n+2) {
+  }
+
+  .prices__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    @include clearfix();
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  .prices__item:nth-child(1), .prices__item:nth-child(3) {
     display: none;
   }
+
+  .prices__title--base, .prices__title--unlim {
+    display: none;
+  }
+
   .prices__title {
     background-color: #283645;
-    // background-image: url('img/bg-hit.svg');
   }
+
   .prices__hit {
-    background-image: url('../img/bg-hit.svg');
+    background: url('../img/bg-hit.png') no-repeat;
+    @include size(74px, 73px);
     float: left;
+    position: absolute;
   }
+
   .prices__hit-span {
     @include font-1(30px);
     position: absolute;
-    transform:  translate(10px, 10px) rotate(-45deg);
+    transform:  translate(-23px, 10px) rotate(-45deg);
   }
+
   .prices__name {
     @include font-white-bold(30px);
     display: block;
+    padding-top: 14px;
   }
+
   .prices__amount {
     @include font-2(30px);
     color: #ffffff;
+    display: block;
+    padding-bottom: 16px;
   }
+
   .prices__content {
+    font-size: 14px;
     background-color: #ffffff;
     text-align: left;
-  }
-  .prices__option {
     border-bottom: 2px solid #e5e5e5;
   }
-  .prices__border {
-    border-left: 2px solid #e5e5e5;
-    border-right: 2px solid #e5e5e5;
-    }
+
+  .prices__option {
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 14px;
+    border-collapse: collapse;
   }
+
+  .prices__option td {
+    padding-left: 50px;
+    padding-top: 14px;
+    border: 2px solid #e5e5e5;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 14px;
+    width: 210px;
+
+  }
+
+  .prices__points {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    border-collapse: collapse;
+    margin-left: -4px;
+  }
+
+  .prices__points--base, .prices__points--unlim {
+    display: none;
+  }
+
+  .prices__points td {
+    padding-top: 14px;
+    padding-left: 5px;
+    border: 2px solid #e5e5e5;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 14px;
+    width: 75px;
+
+  }
+
+@media ($tablet-widths) {
+
+  .prices__wrapper {
+    width: auto;
+    border: none;
+  }
+
+  .prices__title--base, .prices__title--unlim {
+    display: block;
+  }
+
+  .prices__points--base, .prices__points--unlim {
+    display: block;
+  }
+}

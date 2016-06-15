@@ -11,7 +11,11 @@
 .page-body {
   @include font-name;
   @include font-4(30px);
+  font-size: 0;
   background-color: #939393;
+  margin: 0;
+  padding: 0;
+
   a {
     text-decoration: none;
   }
