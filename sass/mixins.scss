@@ -50,6 +50,30 @@
   @include font-param(14px, $l, 400);
 }
 
-@mixin font-form {
-  @include font-param(18px, 30px, 400);
+@mixin font-5($l: 30px) {
+  @include font-param(18px, $l, 400);
+}
+
+@mixin toggle($id) {
+  ##{$id}:checked ~ .slider__toggles .slider__toggle[for='#{$id}'] {
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    @include size(6px, 6px);
+    border-radius: 50%;
+    position:relative;
+    top: -3px;
+  }
+}
+
+@mixin container() {
+  // width: 320px;
+  margin: 0 auto;
+
+  @media ($tablet-widths) {
+      width: 620px;
+  }
+
+  @media ($desktop-widths) {
+      width: 940px;
+  }
 }

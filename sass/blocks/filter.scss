@@ -1,25 +1,25 @@
 .filter {
   text-align: center;
   padding-top: 20px;
-  &__title {
+  .filter__title {
     padding-bottom: 23px;
   }
-  &__content {
+  .filter__content {
     background-color: #f2f2f2;
   }
-  &__range {
+  .filter__range {
     display: block;
     margin: 0 auto;
   }
-  &__range--disabled {
+  .filter__range--disabled {
     display: none;
   }
-  &__btns {
+  .filter__btns {
     border-top: 1px solid #dddfe0;
     padding-top: 38px;
     padding-bottom: 41px;
   }
-  &__btn {
+  .filter__btn {
     line-height: 18px;
     color: #d22856;
     display: block;
@@ -30,7 +30,7 @@
     padding-top: 13px;
     padding-bottom: 13px;
   }
-  &__btn--disabled {
+  .filter__btn--disabled {
     margin-top: 12px;
     border-color: #dddfe0;
     color: #dddfe0;

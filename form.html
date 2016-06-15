@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/normalize.min.css'>
     <title>HTML Academy: Пинк</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
   </head>
-  <body class="page-body">
-    <div class="wrapper">
-      <header class="page-header">
-        <div class="page-header page-header--menu-open">
-          <div class="page-header__title page-header__title--menu-open">
-            <div class="container">
-              <div class="page-header__logo">
-                <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22"></a>
-              </div>
-            <input class="page-header__btn page-header__btn--close" type="image" name="button" src="img/icon-menu-cross.svg">
+  <body class='page-body'>
+    <div class='wrapper'>
+      <header class='page-header'>
+        <div class='page-header page-header--menu-open'>
+          <div class='page-header__title page-header__title--menu-open'>
+            <span class='page-header__logo-img'></span>
+            <input class='page-header__btn page-header__btn--close' type='image' name='button' src='img/icon-menu-cross.svg'>
           </div>
-          </div>
-          <nav class="main-nav main-nav--nojs">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a href="#">Конкурс</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
-            </ul>
+          <nav class='main-nav main-nav--nojs'>
+            <span class='page-header__logo-desktop'></span>
+            <div class='main-nav__wraper'>
+              <span class='main-nav__logo-desktop'></span>
+              <ul class='main-nav__list'>
+                <li class='main-nav__item main-nav__item--active'><a href='index.html'>Главная</a></li>
+                <li class='main-nav__item'><a href='photo.html'>Фотографии</a></li>
+                <li class='main-nav__item'><a>Конкурс</a></li>
+                <li class='main-nav__item'><a href='https://htmlacademy.ru/'>Html Academy</a></li>
+              </ul>
+            </div>
           </nav>
         </div>
-        <div class="page-header page-header--menu-close">
+        <div class="page-header page-header--menu-close page-header--inner">
           <div class="page-header__title page-header__title--menu-close">
-            <div class="container">
               <div class="page-header__logo">
-                <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22"></a>
+                <a href="index.html"><span class='page-header__logo-img'></span></a>
               </div>
               <input class="page-header__btn page-header__btn--open" type="image" name="button" src="img/icon-menu-burger.svg">
-            </div>
           </div>
-          <div class="container">
-            <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
-          </div>
+          <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
         </div>
       </header>
-      <main>
+      <main class='page-main page-main--form'>
         <section class="who">
-          <div class="container">
+          <div class="who__wrapper">
             <p class="who__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
             <form class="who__form" action="#" method="post">
-              <label class="who__label" for="surname">Фамилия:</label>
-              <input class="who__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
-              <label class="who__label" for="name">Имя:</label>
-              <input class="who__input" type="text" name="name" id="name" placeholder="Введите ваше имя">
-              <label class="who__label" for="middlename">Отчество:</label>
-              <input class="who__input" type="text" name="middlename" id="middlename" placeholder="Ну и отчество тоже">
+              <label class="who__label" for="surname"><span>Фамилия:</span>
+                <input class="who__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+              </label>
+              <label class="who__label" for="name"><span>Имя:</span>
+                <input class="who__input" type="text" name="name" id="name" placeholder="Введите ваше имя">
+              </label>
+              <label class="who__label" for="middlename"><span>Отчество:</span>
+                <input class="who__input" type="text" name="middlename" id="middlename" placeholder="Ну и отчество тоже">
+              </label>
             </form>
           </div>
         </section>
@@ -138,14 +139,16 @@
           </div>
         </section>
       </main>
-      <footer class="inner-footer">
-        <img class="inner-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="PINL LOGO" width="147" height="40">
-        <div class="inner-footer__social">
-          <a class="social-link social-link--twitter" href="#">twitter</a>
-          <a class="social-link social-link--facebook" href="#">facebook</a>
-          <a class="social-link social-link--youtube" href="#">youtube</a>
+      <footer class="social-footer social-footer--inner">
+        <div class='social-footer__wrapper'>
+          <span class='social-footer__logo'></span>
+          <div class='social-footer__btns'>
+            <a class='social-link social-link--twitter social-link--circle' href='#'>twitter</a>
+            <a class='social-link social-link--facebook social-link--circle' href='#'>facebook</a>
+            <a class='social-link social-link--youtube social-link--circle' href='#'>youtube</a>
+          </div>
+          <span class='social-footer__copyright'>Разработано</span>
         </div>
-        <span class="inner-footer__copyright">Разработано</span>
       </footer>
     </div>
   </body>

@@ -1,15 +1,18 @@
 .achievements {
   background-color: #f2f2f2;
-  &__title {
-    @include font-4(30px);
-    color: #d22856;
-    text-align: center;
-    text-transform: uppercase;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  &__label {
-    display: block;
-    @include font-form;
-  }
+  display: flex;
+}
+
+.achievements__title {
+  @include font-4(30px);
+  color: #d22856;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.achievements__label {
+  display: block;
+  @include font-5;
 }
