@@ -18,7 +18,7 @@
 
 .social-footer__logo {
   display: block;
-  background-image: url('../img/logo-pink-footer.svg');
+  background: url('../img/logo-pink-footer.svg') no-repeat;
   @include size(147px, 40px);
   margin: 0 auto;
 }
@@ -31,6 +31,8 @@
   display: block;
   @include font-4(18px);
   color: #283645;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 @media ($tablet-widths) {
@@ -38,7 +40,7 @@
   .social-footer {
     padding-top: 37px;
     padding-bottom: 38px;
-    margin-top: 0;
+    margin-top: 58px;
   }
 
   .social-footer--index {
@@ -47,21 +49,26 @@
   }
 
   .social-footer__logo {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 72px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .social-footer__btns {
     display: inline-block;
     margin-top: 0;
-    margin-right: 83px;
+    // margin-right: 83px;
     vertical-align: top;
+    margin: 0 auto;
+    margin-left: 180px;
+
   }
 
   .social-footer__copyright {
     display: inline-block;
+    padding: 0;
     padding-top: 16px;
+    margin-left: 93px;
   }
 
   .social-footer__copyright::after {
@@ -79,14 +86,22 @@
 
   .social-footer__logo {
     margin-right: 272px;
+    background: url('../img/logo-pink-footer-desktop.png') no-repeat;
   }
 
   .social-footer__btns {
-    margin-right: 233px;
+    margin-right: 215px;
+    margin-left: 360px;
+
+  }
+
+  .social-footer__copyright {
+    @include font-5(18px);
+    margin-left: 0;
   }
 
   .social-footer__copyright::after {
-    left: 946px;
+    left: 920px;
   }
 
 }

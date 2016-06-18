@@ -1,15 +1,96 @@
 .application {
   background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+
+  fieldset {
+    border: none;
+    display: flex;
+    padding-top: 33px;
+  }
+
+}
+
+.application__wrapper {
+  @include container();
+}
+
+.application__form {
+  // padding-top: 33px;
+  padding-bottom: 47px;
+  width: 280px;
+  justify-content: center;
+}
+
+.application__label {
+  display: block;
+  @include font-5;
+}
+
+.application__title {
+  @include font-4(30px);
+  color: #d22856;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.application__radio {
+  margin-bottom: 52px;
+}
+
+.application__label:last-child .application__radio {
+  margin-bottom: 0;
+}
+
+@media ($tablet-widths) {
+
+  .application {
+    background-color: #ffffff;
+    margin: -13px;
+    order: 1;
+
+    fieldset {
+      border: 2px solid #e5e5e5;
+      padding-left: 53px;
+      padding-bottom: 46px;
+      // width: auto;
+    }
+
+  }
+
+  .application__form {
+    width: auto;
+  }
+
+  .application__radio {
+    margin-bottom: 45px;
+  }
+
   .application__title {
-    @include font-4(30px);
-    color: #d22856;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    text-transform: uppercase;
+    padding-left: 35px;
+    padding-right: 35px;
   }
-  .application__label {
-    display: block;
-    @include font-5;
+
+}
+
+@media ($desktop-widths) {
+
+  .application {
+    width: 470px;
+    margin-left: auto;
+    margin-right: 130px;
+    order: 0;
+    margin-top: -335px;
+
+    fieldset {
+      padding-bottom: 55px;
+    }
   }
+
+  .application__form {
+// justify-content: flex-end;
+  }
+
 }
